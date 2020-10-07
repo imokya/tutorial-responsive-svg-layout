@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自适应宽度SVG图文伸长动画-demo1</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <section style="overflow:hidden;line-height:0;">
+    <section style="height:0;line-height:0;">
+      <svg viewBox="0 0 750 800" style="background-color:blue;width:100%;display:inline-block;"></svg>
+      <svg viewBox="0 0 750 800" style="background-color:green;width:100%;display:inline-block;"></svg>
+    </section>
+    <svg viewBox="0 0 750 500" style="background-color:red;width:100%;display:inline-block;">
+      <animate attributeName="width" from="100%" to="320%" dur="1s" fill="freeze" begin="click" restart="never"></animate>
+      <animate attributeName="opacity" begin="click" from="1" to="0" dur="0.1s" fill="freeze" restart="never"></animate>
+    </svg>
+  </section>
+  
+</body>
+</html>
+
+
+
